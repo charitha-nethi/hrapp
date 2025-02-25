@@ -5,8 +5,8 @@ const SignIn = () => {
   const [password, setPassword] = useState("");
 
   return (
-    <div className="p-5 max-w-md mx-auto">
-      <h2 className="text-xl font-bold mb-4">Sign In</h2>
+    <div className="content">
+      <h2 className="heading">Sign In</h2>
       <input
         type="email"
         placeholder="Email"

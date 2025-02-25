@@ -5,6 +5,8 @@ import Dashboard from "./components/Dashboard";
 import Analytics from "./components/Analytics";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
+import './styles.css';
+
 
 function App() {
   return (

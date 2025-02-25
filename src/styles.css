@@ -1,0 +1,135 @@
+/* Sidebar Styles */
+.sidebar {
+    width: 16rem; /* Fixed width */
+    height: 100vh; /* Full viewport height */
+    background-color: #1a202c; /* Dark background */
+    color: white;
+    padding: 1.25rem;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto; /* Enable scrolling */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Sidebar header */
+  .sidebar-header {
+    text-align: left;
+    padding: 1rem 0;
+    border-bottom: 2px solid #2d3748; /* Adds a subtle divider */
+    margin-bottom: 2%;
+  }
+  
+  /* Sidebar heading */
+  .sidebar-header h2 {
+    font-size: 25px;
+    text-align: left;
+    font-weight: bold;
+    margin: 0%;
+    color: white;
+    z-index: -1;
+  }
+  
+  /* Sidebar menu */
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 70px;
+    flex-grow: 1; /* Pushes items to take available space */
+  }
+  
+  /* Sidebar items */
+  .sidebar li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+    text-align: left;
+    font-size: 1rem;
+  }
+  
+  /* Hover effect */
+  .sidebar a:hover {
+    background-color: #2d3748;
+  }
+  
+  /* Content area */
+  /* Content area */
+.content {
+    margin-left: 16rem; /* Offset by sidebar width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background: #f8f9fa; /* Light background */
+  }
+  
+  /* Card Styles */
+  .card {
+    width: 25%;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+  }
+  .head h1{
+text-align: center;
+margin-top: 0%;
+  }
+  /* Navbar Styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 18.5rem; /* Offset for sidebar */
+  width: calc(100% - 21rem); /* Full width minus sidebar width */
+  background:  #2d3748;
+  padding: 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Search bar */
+.navbar input {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 15%;
+}
+
+/* Icons container */
+.navbar .icons {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+/* Content area adjustment (push down to avoid overlap) */
+.content {
+  margin-left: 16rem; /* Sidebar width */
+  margin-top: 4rem; /* Space for navbar */
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 4rem); /* Full height minus navbar */
+  background: #f8f9fa;
+}
+.heading {
+  text-align: center;
+margin-bottom: auto;
+margin-left: 350px;
+}
